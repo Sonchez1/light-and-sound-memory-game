@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <h1>Light and Sound Memory Game</h1>
+    
+    
+    <div id="playDiv">
+      <button id="play" onclick="play()">
+        Play
+      </button>
+      <span id="info"></span>
+    </div>
+
+    <div class="hidden" id="setup">
+        <button id="startBtn" onclick="startGame()">
+          Start
+        </button>
+        <button id="stopBtn" class="hidden" onclick="stopGame()">
+          Stop
+        </button>
+
+    <div id="clockdiv">
+    <div>
+      <span id="seconds"></span>
+      <div class="smalltext">Seconds
+      left</div>
+        </div>
+    </div>
+
+    
+    <div id="gameButtonArea">
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
+      
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+      <button id="button7" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone()"></button>
+      <button id="button8" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone()"></button>
+      <button id="button9" onclick="guess(9)" onmousedown="startTone(9)" onmouseup="stopTone()"></button>
+      <button id="button10" onclick="guess(10)" onmousedown="startTone(10)" onmouseup="stopTone()"></button>
+    </div>
+      
+    <audio src="https://cdn.glitch.com/af86ac13-79a3-42a5-9ab2-a738d8083738%2FES_Buzzer%20Button%208%20-%20SFX%20Producer.mp3?v=1616616152928" id="buzzer">
+    </audio>
+ 
+</div>
+    
+  </body>
+</html>
